@@ -1,0 +1,208 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #54077db9;
+    background-size: cover;
+    background-position: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 1px;
+    height: 13%;
+    width: 100%;
+    background-color: #54077db9;
+    color: white;
+    padding: 0 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header img {
+    max-height: 90%;
+    width: auto;
+    margin-left: 20px;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin-right: 90px;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 0.3s;
+    margin: 0 80px; 
+    border-radius: 6px;
+    position: relative;
+    box-shadow: rgb(254, 28, 68);
+    margin-bottom: 20px;
+}
+
+nav a.active, nav a:hover {
+    background-color: hsla(278, 90%, 16%, 0.678);
+}
+
+nav a::after {
+    content: attr(data-text); 
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 1;
+    pointer-events: none; 
+   
+}
+
+nav a.news {
+    background-image:url(../style/iconNews.png) ;
+    
+}
+
+nav a.team {
+    background-image:url(../style/iconTeam.png) ;
+    
+}
+
+nav a.media {
+    background-image:url(../style/iconMedia.png) ;
+    
+}
+
+nav a.iconMeasure {
+    background-image:url(../style/iconMeasure.png) ;
+    
+}
+
+nav a.contact {
+    background-image:url(../style/iconContact.png) ;
+    
+}
+
+.account-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    background-image:url(../style/iconAccount.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10%;
+    box-shadow: rgb(56, 0, 56);
+    padding: 10px;
+    height: 25px;
+    width: 25px;
+    
+}
+
+p {
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+}
+
+.login-container {
+    background-color: rgba(119, 27, 131, 0.568);
+    padding: 20px;
+    border-radius: 60px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-items: center;
+    width: 450px;
+    margin: 160px auto;
+    height: 450px;
+}
+
+.login-container form {
+    margin-top: 80px;
+    margin-bottom: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+
+.login-container input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #9e00fabe;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    max-height: 50px;
+    font-size: 30px;
+    background-color: #ffffff;
+    color: black;
+    text-align: center;
+}
+
+.login-container button {
+    background-color: rgb(122,39,134);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    width: 300px;
+}
+
+.login-container button:hover {
+    background-color: #4a0668;
+}
+
+.flashes {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    background: linear-gradient(#5a0888, #4a0668);
+    color: #000;
+    padding: 10px 0;
+    height: 3%;
+}
